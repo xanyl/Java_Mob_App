@@ -1,17 +1,23 @@
 package com.example.myapplication;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.example.myapplication.adapter.ProductAdapter;
 import com.example.myapplication.models.Product;
 
+import java.util.ArrayList;
+
 public class ProductActivity extends AppCompatActivity {
+     private RecyclerView rvProduct;
+    private ArrayList<Product> productArrayList;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
-        private RecyclerView rvProduct;
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_product);
         rvProduct = findViewById(R.id.rvProduct);
@@ -44,5 +50,21 @@ public class ProductActivity extends AppCompatActivity {
         product4.setPrice(100.00);
         product4.setName("Shirt");
 
+        Product product5 = new Product();
+        product4.setId(4);
+        product4.setCategory("Clothes");
+        product4.setPrice(1000.00);
+        product4.setName("TShirt");
+
+
+        ArrayList<Product> productArrayList = new ArrayList<>();
+        productArrayList.add(product1);
+        productArrayList.add(product2);
+        productArrayList.add(product3);
+        productArrayList.add(product4);
+        productArrayList.add(product5);
+        ProductAdapter adapter = new ProductAdapter(ProductActivity.this,this.productArrayList);
+        rvProduct.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
+        rvProduct.setAdapter(adapter);
     }
 }
