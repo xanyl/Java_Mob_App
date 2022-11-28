@@ -11,7 +11,7 @@ import android.widget.Toast;
 
 public class LoginActivity extends AppCompatActivity {
 
-    Button btnLogin;
+    Button btnLogin,btnSignup;
     private  String username, password;
     private EditText etUsername, etPassword;
 
@@ -22,9 +22,7 @@ public class LoginActivity extends AppCompatActivity {
         setContentView(R.layout.activity_login);
 
         etUsername = findViewById(R.id.etUsername);
-
         etPassword = findViewById(R.id.etPassword);
-
         btnLogin = findViewById(R.id.btnLogin);
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -41,6 +39,15 @@ public class LoginActivity extends AppCompatActivity {
                }
             }
         });
+        btnSignup = findViewById(R.id.btnSignup);
+        btnSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
+                startActivity(intent);
+//                finish(); // Destroy the login page
+            }
+        }) ;
     }
 
     private boolean meroValidation() {

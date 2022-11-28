@@ -8,5 +8,7 @@
     <string name="txtLogin">Login</string>
     <string name="txtUsername">Username</string>
     <string name="txtProduct">Product</string>
+    <string name="txtNoAccount">Don\'t Have An Account, Yet?</string>
+    <string name="txtSignup">signUp</string>
 
 </resources>

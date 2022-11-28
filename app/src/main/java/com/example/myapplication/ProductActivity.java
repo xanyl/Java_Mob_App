@@ -51,19 +51,20 @@ public class ProductActivity extends AppCompatActivity {
         product4.setName("Shirt");
 
         Product product5 = new Product();
-        product4.setId(4);
-        product4.setCategory("Clothes");
-        product4.setPrice(1000.00);
-        product4.setName("TShirt");
+        product5.setId(5);
+        product5.setCategory("Clothes");
+        product5.setPrice(1000.00);
+        product5.setName("TShirt");
 
 
         ArrayList<Product> productArrayList = new ArrayList<>();
+
         productArrayList.add(product1);
         productArrayList.add(product2);
         productArrayList.add(product3);
         productArrayList.add(product4);
         productArrayList.add(product5);
-        ProductAdapter adapter = new ProductAdapter(ProductActivity.this,this.productArrayList);
+        ProductAdapter adapter = new ProductAdapter(ProductActivity.this,productArrayList);
         rvProduct.setLayoutManager(new LinearLayoutManager(this,LinearLayoutManager.VERTICAL,false));
         rvProduct.setAdapter(adapter);
     }
