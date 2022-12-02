@@ -8,6 +8,8 @@ public class ApiClient {
     public static Retrofit retrofit = null;
 
     public static Retrofit getClient() {
+
+        //logcat ma herna ko lagi
         if (retrofit == null) {
             HttpLoggingInterceptor logging = new HttpLoggingInterceptor();
             logging.setLevel(HttpLoggingInterceptor.Level.BODY);
