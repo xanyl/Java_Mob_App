@@ -43,7 +43,7 @@ public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductV
         holder.tvPrice.setText(String.valueOf(item.getPrice()));
         Glide.with(context)
                 .load(Api.BASE_URL + item.getUrl())
-                .placeholder(R.drawable.abc)
+                .placeholder(R.drawable.login_img)
                 .into(holder.ivProduct);
     }
 
