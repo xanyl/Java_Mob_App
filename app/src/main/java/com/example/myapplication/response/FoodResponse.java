@@ -3,7 +3,7 @@ package com.example.myapplication.response;
 import com.example.myapplication.models.Food;
 
 import java.util.ArrayList;
-
+//response class use for parsing
 public class FoodResponse {
     private boolean success;
     private String message;

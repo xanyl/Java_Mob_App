@@ -10,5 +10,9 @@
     <string name="txtProduct">Product</string>
     <string name="txtNoAccount">Don\'t Have An Account, Yet?</string>
     <string name="txtSignup">signUp</string>
+    <string name="add_record">Add Record</string>
+    <string name="delete_record">Delete Record</string>
+    <string name="total_records">Total Records:</string>
+    <string name="value">10</string>
 
 </resources>

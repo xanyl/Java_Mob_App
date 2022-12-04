@@ -17,6 +17,7 @@ import com.example.myapplication.models.Food;
 import com.example.myapplication.models.Product;
 
 import java.util.ArrayList;
+//recycler view ma data add garne
 
 //Exam Ko Lagi Important xa
 public class ProductAdapter extends RecyclerView.Adapter<ProductAdapter.ProductViewHolder> {

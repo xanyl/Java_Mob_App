@@ -1,5 +1,5 @@
 package com.example.myapplication.models;
-
+//model is a table
 public class Food {
     private int id;
     private  String name,price,status,url;
