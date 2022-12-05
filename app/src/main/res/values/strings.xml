@@ -14,5 +14,10 @@
     <string name="delete_record">Delete Record</string>
     <string name="total_records">Total Records:</string>
     <string name="value">10</string>
+    <string name="txtAddRecord">ADD</string>
+
+
+    <string name="txtDeleteAll">deleteall</string>
+    <string name="txtBurger">Burger</string>
 
 </resources>
