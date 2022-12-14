@@ -1,6 +1,7 @@
 package com.example.myapplication;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Toast;
@@ -25,7 +26,8 @@ public class DatabaseActivity extends AppCompatActivity {
         binding.btnAddRecord.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(DatabaseActivity.this, "Button Clicked", Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(DatabaseActivity.this, AddRecordActivity.class);
+                startActivity(intent);
             }
         });
         binding.rvRecords.setLayoutManager(new LinearLayoutManager(
