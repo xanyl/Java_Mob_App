@@ -4,7 +4,6 @@
     <string name="title_home">Home</string>
     <string name="title_dashboard">Dashboard</string>
     <string name="title_notifications">Notifications</string>
-
     <string name="txtLogin">Login</string>
     <string name="txtUsername">Username</string>
     <string name="txtProduct">Product</string>
@@ -15,9 +14,7 @@
     <string name="total_records">Total Records:</string>
     <string name="value">10</string>
     <string name="txtAddRecord">ADD</string>
-
-
     <string name="txtDeleteAll">deleteall</string>
     <string name="txtBurger">Burger</string>
-
+    <string name="txtAllFood">Search</string>
 </resources>
